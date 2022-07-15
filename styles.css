@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    background: #e5e5e5;
+}
+
+.wrapper {
+    position: absolute;
+    width: 1200px;
+    height: 1000px;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: auto;
+
+    background: #C0DBD9;
+}
+
+.head {
+    position: absolute;
+    width: 1170px;
+    height: 100px;
+    left: 15px;
+    top: 0px;
+
+    background: #7FAFF7;
+}
+
+.head__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    width: 206px;
+    height: 39px;
+    left: 30px;
+    top: 30.5px;
+    text-decoration: none;
+    background: #A5C7F9;
+    border-radius: 5px;
+
+    font: normal 400 20px /23px 'Roboto', sans-serif;
+
+    color: #FFFFFF;
+
+    cursor: pointer;
+}
+
+.head__button:hover {
+    background: #C5DBFB;
+}
+
+
+.block1 {
+    position: absolute;
+    width: 1170px;
+    height: 411px;
+    left: 15px;
+    top: 115px;
+
+    background: #B3F95A;
+    font: normal 400 53px /63px 'Roboto', sans-serif;
+    color: #FFF;
+}
+
+.block1__frame1 {
+    position: absolute;
+    width: 390px;
+    height: 198px;
+    left: 0px;
+    top: 0px;
+    content: '1';
+    background: #8AD191;
+}
+.block1__frame1::before {
+    content: "1";
+    position: absolute;
+    display: block;
+    width: min-content;
+    height: min-content;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.block1__frame2 {
+    position: absolute;
+    width: 590px;
+    height: 198px;
+    left: 405px;
+    top: 0px;
+
+    background: #8AD191;
+}
+
+.block1__frame2::before {
+    content: "2";
+    position: absolute;
+    display: block;
+    width: min-content;
+    height: min-content;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.block1__frame3 {
+    position: absolute;
+    width: 160px;
+    height: 198px;
+    left: 1010px;
+    top: 0px;
+    
+    background: #8AD191;
+}
+
+.block1__frame3::before {
+    content: "3";
+    position: absolute;
+    display: block;
+    width: min-content;
+    height: min-content;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.block1__frame4 {
+    position: absolute;
+    width: 995px;
+    height: 198px;
+    left: 0px;
+    top: 213px;
+    
+    background: #8AD191;
+}
+
+.block1__frame4::before {
+    content: "4";
+    position: absolute;
+    display: block;
+    width: min-content;
+    height: min-content;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.block1__frame5 {
+    position: absolute;
+    width: 160px;
+    height: 198px;
+    left: 1010px;
+    top: 213px;
+    
+    background: #8AD191;
+}
+
+.block1__frame5::before {
+    content: "5";
+    position: absolute;
+    display: block;
+    width: min-content;
+    height: min-content;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.block2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+
+    position: absolute;
+    padding: 30px;
+    left: 15px;
+    top: 541px;
+
+    background: #88B5BF;
+}
+
+.block2__frame {
+    width: 255px;
+    height: 199px;
+
+    background: #0D89B0;
+
+    flex: flex-shrink;
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+.footer {
+    position: absolute;
+    width: 1170px;
+    height: 100px;
+    left: 15px;
+    top: 900px;
+
+    background: #7FAFF7;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    background: #fff;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  
+  .popup .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 8px 15px;
+    background: #7FAFF6;
+    border-radius: 5px;
+    text-decoration: none;
+    font: normal 400 20px /23px 'Roboto', sans-serif;
+    color: #FFF;
+  }
+  .popup .close:hover {
+    background: #C5DBFB;
+  }
+  .popup .content {
+    font: normal 400 53px /62px 'Roboto', sans-serif;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
